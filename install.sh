@@ -238,7 +238,7 @@ if [[ -f "${SCRIPT_DIR}/bin/badvpn-udpgw" ]]; then
 else
     # Fallback when the installer was obtained without the complete repository.
     BADVPN_TMP="$(mktemp)"
-    if wget -qO "${BADVPN_TMP}" "https://raw.githubusercontent.com/brutalX-04/open-vpn/main/bin/badvpn-udpgw" \
+    if wget -qO "${BADVPN_TMP}" "https://raw.githubusercontent.com/rnpproject/open-vpn-server/main/bin/badvpn-udpgw" \
         && [[ -s "${BADVPN_TMP}" ]]; then
         install -m 755 "${BADVPN_TMP}" /usr/bin/badvpn-udpgw
     fi
