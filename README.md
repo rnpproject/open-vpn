@@ -1,6 +1,27 @@
 # OpenVPN Control Server
 
+<p align="center">
+  <img src="src/images/banner.png" alt="OpenVPN Control Server" width="100%">
+</p>
+
 Server VPN dengan registry akun SQLite, cleanup berbasis masa aktif, pembatas sesi, menu lokal, dan REST API FastAPI. API hanya bind ke `127.0.0.1:8088`; akses dari luar harus melalui reverse proxy HTTPS yang dikelola admin.
+
+<h2 align="center">Platform yang Didukung</h2>
+<p align="center">
+  <img src="https://img.shields.io/badge/Debian-12%20Bookworm-343a40?style=for-the-badge&logo=debian&logoColor=white" alt="Debian 12">
+  <img src="https://img.shields.io/badge/Ubuntu-22.04%20LTS-343a40?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu 22.04 LTS">
+  <img src="https://img.shields.io/badge/Ubuntu-24.04%20LTS-343a40?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu 24.04 LTS">
+</p>
+
+<h2 align="center">Layanan dan Fitur</h2>
+<p align="center">
+  <img src="https://img.shields.io/badge/Service-OpenVPN%20TCP%2FUDP-343a40?style=for-the-badge&logo=openvpn&logoColor=white" alt="OpenVPN TCP dan UDP">
+  <img src="https://img.shields.io/badge/Service-SSH%20%2F%20Dropbear-343a40?style=for-the-badge&logo=linux&logoColor=white" alt="SSH dan Dropbear">
+  <img src="https://img.shields.io/badge/Service-Stunnel%20%2F%20WebSocket-343a40?style=for-the-badge" alt="Stunnel dan WebSocket">
+  <img src="https://img.shields.io/badge/Service-Xray%20VMess%20%2F%20VLESS%20%2F%20Trojan-343a40?style=for-the-badge" alt="Xray VMess, VLESS, dan Trojan">
+  <img src="https://img.shields.io/badge/API-FastAPI-343a40?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST API FastAPI">
+</p>
+<p align="center"><sub>WebSocket Xray, TLS, dan tautan profil klien memerlukan konfigurasi domain dan reverse proxy. Dukungan fitur yang aktif bergantung pada konfigurasi server.</sub></p>
 
 ## Contoh Tampilan
 
