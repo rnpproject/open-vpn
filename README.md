@@ -76,14 +76,23 @@ Opsi tambahan:
 Menu interaktif: `menu`, `menu-ssh`, `menu-xray`, `menu-ovpn`, `status`, dan `restart-service`.
 
 ```bash
+# Impor atau sinkronkan akun lama ke registry; aman dijalankan ulang.
 vpn-cli migrate
+# Tampilkan daftar akun SSH tanpa menampilkan rahasia.
 vpn-cli list --service ssh
+# Buat akun SSH baru selama 7 hari.
 vpn-cli create --service ssh --user contoh_01 --days 7
+# Perpanjang masa aktif akun SSH selama 3 hari.
 vpn-cli renew --service ssh --user contoh_01 --days 3
+# Hapus akun SSH beserta sesi milik akun tersebut.
 vpn-cli delete --service ssh --user contoh_01
+# Jalankan cleanup akun yang masa aktifnya sudah habis.
 vpn-cli cleanup
+# Periksa konfigurasi dan status layanan untuk diagnosis.
 vpn-cli doctor
+# Ganti API key; simpan key baru yang ditampilkan dengan aman.
 vpn-cli api-key rotate
+
 ```
 
 Username mengikuti `^[a-z][a-z0-9_]{2,19}$`. Durasi adalah 1–30 hari atau 1–720 jam, tepat dihitung sebagai N × 24 jam dari waktu UTC pembuatan. Password SSH dibaca dari stdin (`--password-stdin`) atau dibuat acak bila tidak diberikan; jangan meletakkan password di argumen proses.
