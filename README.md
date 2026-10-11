@@ -41,7 +41,7 @@ Proyek ini dapat digunakan, diubah, dan dibagikan secara gratis sesuai [LICENSE]
 
 ```bash
 apt update && apt install -y git curl
-git clone https://github.com/rnpproject/open-vpn-server.git /opt/open-vpn
+git clone https://github.com/rnpproject/open-vpn-server.git /opt/open-vpn-server
 cd /opt/open-vpn-server
 chmod +x install.sh
 ./install.sh
